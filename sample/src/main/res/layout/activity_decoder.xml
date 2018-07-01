@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <io.github.putme2yourheart.qrcodereaderview.QRCodeReaderView
+        android:id="@+id/QRCodeReaderView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <io.github.putme2yourheart.qrcodereaderview.ScannerCoverLayout
+        android:id="@+id/ScannerCoverLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:corner_color="@color/corner_color"
+        app:frame_color="@color/viewfinder_frame"
+        app:label_text_color="@color/colorAccent"
+        app:laser_color="@color/laser_color"
+        app:mask_color="@color/viewfinder_mask"
+        app:result_color="@color/result_view"
+        app:result_point_color="@color/result_point_color">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:text="Scan QR code"
+                android:textColor="#ffffff" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_flashlight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#20000000"
+                android:gravity="center"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp"
+                android:text="Open Flashlight"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </io.github.putme2yourheart.qrcodereaderview.ScannerCoverLayout>
+
+</android.support.constraint.ConstraintLayout>
