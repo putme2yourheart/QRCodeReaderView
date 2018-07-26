@@ -131,7 +131,7 @@ protected void onPause() {
 
 ```
 
-![](https://github.com/putme2yourheart/QRCodeReaderView/blob/master/screenshots/sample.png)
+![](https://github.com/putme2yourheart/QRCodeReaderView/blob/master/screenshots/sample-1.png)
 
 Libraries used in this project
 ------------------------------
