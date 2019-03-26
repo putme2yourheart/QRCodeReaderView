@@ -9,6 +9,13 @@ Usage
 - Create an Activity which implements `OnQRCodeReadListener`, and let implements required methods or set a `OnQRCodeReadListener` to the QRCodeReaderView object
 - Make sure you have camera permissions in order to use the library. (https://developer.android.com/training/permissions/requesting.html)
 
+- Add the library to your module `build.gradle`
+```groovy
+dependencies {
+     implementation 'io.github.putme2yourheart:qrcodereaderview:1.0.0'
+}
+```
+
 ```xml
 
 <io.github.putme2yourheart.qrcodereaderview.QRCodeReaderView
